@@ -1,0 +1,11 @@
+C:\Users\avera\Documents\self-development\CSharp\time-logger\bin\Debug\netcoreapp2.1\time-logger.deps.json
+C:\Users\avera\Documents\self-development\CSharp\time-logger\bin\Debug\netcoreapp2.1\time-logger.runtimeconfig.json
+C:\Users\avera\Documents\self-development\CSharp\time-logger\bin\Debug\netcoreapp2.1\time-logger.runtimeconfig.dev.json
+C:\Users\avera\Documents\self-development\CSharp\time-logger\bin\Debug\netcoreapp2.1\time-logger.dll
+C:\Users\avera\Documents\self-development\CSharp\time-logger\bin\Debug\netcoreapp2.1\time-logger.pdb
+C:\Users\avera\Documents\self-development\CSharp\time-logger\obj\Debug\netcoreapp2.1\time-logger.csprojAssemblyReference.cache
+C:\Users\avera\Documents\self-development\CSharp\time-logger\obj\Debug\netcoreapp2.1\time-logger.csproj.CoreCompileInputs.cache
+C:\Users\avera\Documents\self-development\CSharp\time-logger\obj\Debug\netcoreapp2.1\time-logger.AssemblyInfoInputs.cache
+C:\Users\avera\Documents\self-development\CSharp\time-logger\obj\Debug\netcoreapp2.1\time-logger.AssemblyInfo.cs
+C:\Users\avera\Documents\self-development\CSharp\time-logger\obj\Debug\netcoreapp2.1\time-logger.dll
+C:\Users\avera\Documents\self-development\CSharp\time-logger\obj\Debug\netcoreapp2.1\time-logger.pdb
