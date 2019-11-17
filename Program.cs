@@ -8,30 +8,56 @@ namespace time_logger
         
         static void Main(string[] args)
         {
-            // string path; 
-            string fileName = "log.txt";
-            try 
-            {
-                DateTime locaDate = DateTime.Now;
-                
-                // Get curent path\
-                string path = Directory.GetCurrentDirectory(); 
-                string pathName = path + "\\" + fileName;
+            bool endApp = false;
 
-                Console.WriteLine(locaDate.ToString());
-                Console.WriteLine(pathName);
-                
-                using (System.IO.StreamWriter file =
-                new System.IO.StreamWriter(pathName, true))
+            Logger a = new Logger();
+
+            while (!endApp)
+            {       
+                try 
                 {
-                    file.WriteLine(locaDate.ToString());
+                    DateTime locaDate = DateTime.Now;
+                    a.Log(locaDate.ToString());
+                    a.saveLog(locaDate.ToString());
                 }
+
+                catch (Exception e)
+                {
+                    Console.WriteLine("THere's been an issue", e.ToString());
+                }
+
+                if (Console.ReadLine() == "n") endApp = true;
             }
 
-            catch (Exception e)
-            {
-                Console.WriteLine("THere's been an issue", e.ToString());
-            }
+        }
+    }
+}
+
+class Logger {
+    private string fileName = "log.txt";
+    static string path = Directory.GetCurrentDirectory(); 
+    static string pathName;
+    public Logger ()
+    {
+        pathName = path + "\\" + fileName;
+    }
+
+    public void setFileName (string name)
+    {
+        fileName = name;
+    }
+
+    public void Log (string str)
+    {
+        Console.WriteLine(str);
+    }
+
+    public void saveLog (string localDateTime)
+    {
+        using (System.IO.StreamWriter file =
+        new System.IO.StreamWriter(pathName, true))
+        {
+            file.WriteLine(localDateTime);
         }
     }
 }
